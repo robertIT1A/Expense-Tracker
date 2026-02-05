@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <h2>Expinsive Tracker</h2>
+
+      <div class="balance">
+            <h3>Your Balance</h3>
+            <h1 id="balance">₱0.00</h1>
+
+            <div class="incomeExpense">
+                <div class="income">
+                    <h3>Income</h3>
+                    <p id="moneyPlus" class="money Plus">+₱0.00</p>
+                </div>
+                <div class="expense">
+                    <h3>Expense</h3>
+                    <p id="moneyMinus" class="money Minus">-₱0.00</p>
+                </div>
+        </div>
+      </div>
+      <h3>Transaction History</h3>
+      <ul id="list" class="list">
+        <li>No Transaction</li>
+      </ul>
+
+      <h3>Add New Transaction</h3>
+      <form action="" id="form">
+        <div class="formControl">
+            <label for="text">Name</label>
+            <input type="text" placeholder="Enter Description" id="text" required />
+        </div>
+        <div class="formControl">
+            <label for="amount">Amount</label>
+            <input type="number" placeholder="Enter Amount" id="amount" required />
+            <label for="">(positive+ income | negative- expense)</label>
+        </div>
+        <button class="btn">
+            Add Transaction
+        </button>
+      </form>
+    <script src="script.js"></script>
+  </body>
+</html>
