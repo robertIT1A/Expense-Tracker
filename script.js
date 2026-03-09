@@ -6,8 +6,6 @@ const balance = document.getElementById("balance"),
     text = document.getElementById("text"),
     amount = document.getElementById("amount");
 
-
-
 let transactions = [];
 
 
@@ -118,4 +116,5 @@ function updateTransaction() {
     moneyPlus.innerHTML=`₱${income}`; // para sa income
     moneyMinus.innerHTML=`₱${expense}`; // para sa expense
 }
+
 
